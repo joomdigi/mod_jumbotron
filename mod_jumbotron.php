@@ -1,0 +1,28 @@
+<?php
+/**
+ * @version     1.1
+ * @package     mod_jumbotron
+ * @copyright   Copyright (C) 2013. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @author      Brad Traversy <support@joomdigi.com> - http://www.joomdigi.com
+ */
+//No Direct Access
+defined('_JEXEC') or die;
+
+/* Params */
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+$show_read_more =  $params->get('show_read_more');
+$read_more_text =  $params->get('read_more_text');
+$read_more_link =  $params->get('read_more_link');
+$header_text =  $params->get('header_text');
+$paragraph_text=  $params->get('paragraph_text');
+$background_image=  $params->get('background_image');
+$paragraphtextcolor=  $params->get('paragraphtextcolor');
+$headingtextcolor=  $params->get('headingtextcolor');
+$buttonstyle=  $params->get('buttonstyle','btn btn-primary btn-lg btn-color');
+
+// Include the syndicate functions only once
+require_once dirname(__FILE__).'/helper.php';
+
+require JModuleHelper::getLayoutPath('mod_jumbotron', $params->get('layout', 'default'));
+?>
