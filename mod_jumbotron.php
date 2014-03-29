@@ -1,6 +1,6 @@
 <?php
 /**
- * @version     1.1
+ * @version     1.2
  * @package     mod_jumbotron
  * @copyright   Copyright (C) 2013. All rights reserved.
  * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
@@ -16,7 +16,11 @@ $read_more_text =  $params->get('read_more_text');
 $read_more_link =  $params->get('read_more_link');
 $header_text =  $params->get('header_text');
 $paragraph_text=  $params->get('paragraph_text');
+$center_text=  $params->get('center_text');
 $background_image=  $params->get('background_image');
+$background_color=  $params->get('background_color');
+$foreground_image=  $params->get('foreground_image');
+$foreground_image_width=  $params->get('foreground_image_width');
 $paragraphtextcolor=  $params->get('paragraphtextcolor');
 $headingtextcolor=  $params->get('headingtextcolor');
 $buttonstyle=  $params->get('buttonstyle','btn btn-primary btn-lg btn-color');
